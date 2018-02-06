@@ -4,15 +4,67 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="horizontal"
     tools:context="com.example.dronepet.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+    <fragment
+        android:id="@+id/fragment"
+        android:layout_width="608dp"
+        android:layout_height="252dp"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:name="android.app.DialogFragment">
+
+    </fragment>
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutFloatingBttn"
+        android:layout_width="590dp"
+        android:layout_height="57dp"
+        android:gravity="bottom|center"
+        android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/fragment"
+        >
 
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/FloatingBttnTakeOff"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:layout_weight="1"
+            android:clickable="true"
+            app:backgroundTint="@android:color/transparent"
+            app:fabSize="normal"
+            app:srcCompat="@drawable/follow" />
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/FloatingBttnFollowMe"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            app:backgroundTint="@android:color/transparent"
+            app:fabSize="normal"
+            app:srcCompat="@drawable/drone" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/FloatingBttnMic"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:layout_marginLeft="400dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            app:backgroundTint="@android:color/transparent"
+            app:fabSize="normal"
+            app:srcCompat="@drawable/mic" />
+    </LinearLayout>
 </android.support.constraint.ConstraintLayout>
