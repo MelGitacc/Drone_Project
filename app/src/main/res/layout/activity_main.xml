@@ -9,13 +9,13 @@
 
     <fragment
         android:id="@+id/fragment"
-        android:layout_width="608dp"
+        android:name="android.app.DialogFragment"
+        android:layout_width="0dp"
         android:layout_height="252dp"
         android:orientation="horizontal"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:name="android.app.DialogFragment">
+        app:layout_constraintTop_toTopOf="parent">
 
     </fragment>
 
