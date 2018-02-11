@@ -12,12 +12,12 @@
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@android:color/white">
+        android:background="@drawable/background2">
 
         <Button
             android:id="@+id/forwardBttn"
-            android:layout_width="wrap_content"
-            android:layout_height="65dp"
+            android:layout_width="85dp"
+            android:layout_height="70dp"
             android:layout_marginTop="44dp"
             android:background="@drawable/forward"
             app:layout_constraintTop_toTopOf="parent"
@@ -26,9 +26,9 @@
 
         <Button
             android:id="@+id/backwardsBttn"
-            android:layout_width="wrap_content"
-            android:layout_height="65dp"
-            android:layout_marginBottom="68dp"
+            android:layout_width="86dp"
+            android:layout_height="75dp"
+            android:layout_marginBottom="60dp"
             android:background="@drawable/backward"
             app:layout_constraintBottom_toBottomOf="parent"
             tools:ignore="MissingConstraints"
@@ -36,28 +36,27 @@
 
         <Button
             android:id="@+id/rotateLeftBttn"
-            android:layout_width="wrap_content"
-            android:layout_height="65dp"
-            android:layout_marginBottom="136dp"
-            android:layout_marginStart="16dp"
-            android:background="@drawable/rotateLeft"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            android:layout_width="83dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="112dp"
+            android:background="@drawable/rleft"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="33dp" />
 
         <Button
             android:id="@+id/RotateRightBttn"
-            android:layout_width="wrap_content"
-            android:layout_height="65dp"
-            android:layout_marginTop="108dp"
-            android:background="@drawable/rotateRight"
+            android:layout_width="83dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="112dp"
+            android:background="@drawable/rright"
             app:layout_constraintTop_toTopOf="parent"
             tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="191dp" />
+            tools:layout_editor_absoluteX="176dp" />
 
         <Button
             android:id="@+id/upBttn"
             android:layout_width="wrap_content"
-            android:layout_height="65dp"
+            android:layout_height="70dp"
             android:layout_marginTop="44dp"
             android:background="@drawable/up"
             app:layout_constraintTop_toTopOf="parent"
@@ -67,7 +66,7 @@
         <Button
             android:id="@+id/leftBttn"
             android:layout_width="wrap_content"
-            android:layout_height="65dp"
+            android:layout_height="70dp"
             android:layout_marginBottom="136dp"
             android:background="@drawable/left"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -77,7 +76,7 @@
         <Button
             android:id="@+id/rightBttn"
             android:layout_width="wrap_content"
-            android:layout_height="65dp"
+            android:layout_height="70dp"
             android:layout_marginEnd="16dp"
             android:background="@drawable/right"
             app:layout_constraintEnd_toEndOf="parent"
@@ -87,7 +86,7 @@
         <Button
             android:id="@+id/downBttn"
             android:layout_width="wrap_content"
-            android:layout_height="65dp"
+            android:layout_height="70dp"
             android:layout_marginBottom="72dp"
             android:background="@drawable/down"
             app:layout_constraintBottom_toBottomOf="parent"

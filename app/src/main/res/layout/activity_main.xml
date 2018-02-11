@@ -7,9 +7,11 @@
     android:orientation="horizontal"
     tools:context="com.example.dronepet.MainActivity">
 
+    <!--  sets fragment layout as default using the layout of controls fragment -->
     <fragment
         android:id="@+id/fragment"
-        android:name="android.app.DialogFragment"
+        android:name="com.example.dronepet.ControlsFragment"
+        tools:layout="@layout/fragment_controls"
         android:layout_width="0dp"
         android:layout_height="252dp"
         android:orientation="horizontal"
@@ -23,13 +25,13 @@
         android:id="@+id/LinearLayoutFloatingBttn"
         android:layout_width="590dp"
         android:layout_height="57dp"
+        android:background="@drawable/background2"
         android:gravity="bottom|center"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fragment"
-        >
+        app:layout_constraintTop_toBottomOf="@+id/fragment">
 
         <android.support.design.widget.FloatingActionButton
             android:id="@+id/FloatingBttnTakeOff"
@@ -38,6 +40,7 @@
             android:layout_gravity="left"
             android:layout_weight="1"
             android:clickable="true"
+            android:onClick="handleFragment"
             app:backgroundTint="@android:color/transparent"
             app:fabSize="normal"
             app:srcCompat="@drawable/follow" />
@@ -51,6 +54,7 @@
             android:layout_marginLeft="30dp"
             android:layout_weight="1"
             android:clickable="true"
+            android:onClick="handleFragment"
             app:backgroundTint="@android:color/transparent"
             app:fabSize="normal"
             app:srcCompat="@drawable/drone" />
@@ -63,6 +67,7 @@
             android:layout_marginLeft="400dp"
             android:layout_weight="1"
             android:clickable="true"
+            android:onClick="handleFragment"
             app:backgroundTint="@android:color/transparent"
             app:fabSize="normal"
             app:srcCompat="@drawable/mic" />
