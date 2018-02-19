@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.dronepet.ControlsFragment">
+    tools:context="com.example.dronepet.CommandsFragment.ControlsFragment">
 
     <!-- TODO: Update blank fragment layout -->
 
@@ -24,7 +24,8 @@
             android:gravity="center_horizontal"
             android:orientation="horizontal"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginLeft="100dp" />
 
         <Button
             android:id="@+id/backwardsBttn"
@@ -34,7 +35,8 @@
             android:background="@drawable/backward"
             android:orientation="horizontal"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="100dp" />
 
         <Button
             android:id="@+id/rotateLeftBttn"
@@ -45,7 +47,8 @@
             android:background="@drawable/rleft"
             android:orientation="horizontal"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginLeft="28dp" />
 
         <Button
             android:id="@+id/RotateRightBttn"
@@ -56,7 +59,8 @@
             android:background="@drawable/rright"
             android:orientation="horizontal"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginLeft="172dp" />
 
         <Button
             android:id="@+id/upBttn"
@@ -67,7 +71,8 @@
             android:background="@drawable/up"
             android:orientation="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginRight="120dp" />
 
         <Button
             android:id="@+id/leftBttn"
@@ -77,7 +82,8 @@
             android:layout_marginEnd="196dp"
             android:background="@drawable/left"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginRight="196dp" />
 
         <Button
             android:id="@+id/rightBttn"
@@ -91,7 +97,8 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.923" />
+            app:layout_constraintVertical_bias="0.923"
+            android:layout_marginRight="32dp" />
 
         <Button
             android:id="@+id/downBttn"
@@ -102,7 +109,8 @@
             android:background="@drawable/down"
             android:orientation="horizontal"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginRight="116dp" />
 
     </android.support.constraint.ConstraintLayout>
 

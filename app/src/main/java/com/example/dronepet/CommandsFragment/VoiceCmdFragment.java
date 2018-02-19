@@ -1,4 +1,4 @@
-package com.example.dronepet;
+package com.example.dronepet.CommandsFragment;
 
 import android.os.Bundle;
 import android.app.Fragment;
@@ -6,13 +6,15 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class ControlsFragment extends Fragment {
+import com.example.dronepet.R;
+
+public class VoiceCmdFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_controls, container, false);
+        return inflater.inflate(R.layout.voice_cmd_layout, container, false);
     }
 
 

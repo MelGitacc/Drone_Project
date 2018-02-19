@@ -10,6 +10,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
+import com.example.dronepet.CommandsFragment.ControlsFragment;
+import com.example.dronepet.CommandsFragment.FollowMeFragment;
+import com.example.dronepet.CommandsFragment.VoiceCmdFragment;
 import com.parrot.arsdk.ARSDK;
 
 
@@ -17,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
 
     private FragmentTransaction fragmentTransaction;
     private FragmentManager fragmentManager;
+
     static {
         ARSDK.loadSDKLibs();
     }
@@ -37,6 +41,12 @@ public class MainActivity extends AppCompatActivity {
         Fragment selectedFragment;
 
         if( view == findViewById(R.id.FloatingBttnFollowMe)){
+            selectedFragment = new FollowMeFragment();
+            fragmentManager = getFragmentManager();
+            fragmentTransaction = fragmentManager.beginTransaction();
+            fragmentTransaction.replace(R.id.fragment_container, selectedFragment);
+            fragmentTransaction.commit();
+
             Toast.makeText(getApplicationContext(), "follow me is selected", Toast.LENGTH_LONG).show();
 
         }else if(view == findViewById(R.id.FloatingBttnTakeOff)){
@@ -50,6 +60,12 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(getApplicationContext(), "take off is selected", Toast.LENGTH_LONG).show();
 
         }else if(view == findViewById(R.id.FloatingBttnMic)) {
+
+            selectedFragment = new VoiceCmdFragment();
+            fragmentManager = getFragmentManager();
+            fragmentTransaction = fragmentManager.beginTransaction();
+            fragmentTransaction.replace(R.id.fragment_container, selectedFragment);
+            fragmentTransaction.commit();
 
             Toast.makeText(getApplicationContext(), "Mic is selected", Toast.LENGTH_LONG).show();
         }
