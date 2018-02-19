@@ -3,95 +3,106 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation ="horizontal"
     tools:context="com.example.dronepet.ControlsFragment">
 
     <!-- TODO: Update blank fragment layout -->
 
 
     <android.support.constraint.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/background2">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="fill_horizontal"
+    android:background="@drawable/background2">
 
         <Button
             android:id="@+id/forwardBttn"
-            android:layout_width="85dp"
+            android:layout_width="80dp"
             android:layout_height="70dp"
-            android:layout_marginTop="44dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="36dp"
             android:background="@drawable/forward"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="103dp" />
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <Button
             android:id="@+id/backwardsBttn"
-            android:layout_width="86dp"
-            android:layout_height="75dp"
-            android:layout_marginBottom="60dp"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="100dp"
             android:background="@drawable/backward"
+            android:orientation="horizontal"
             app:layout_constraintBottom_toBottomOf="parent"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="103dp" />
+            app:layout_constraintStart_toStartOf="parent" />
 
         <Button
             android:id="@+id/rotateLeftBttn"
-            android:layout_width="83dp"
+            android:layout_width="80dp"
             android:layout_height="70dp"
-            android:layout_marginTop="112dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="120dp"
             android:background="@drawable/rleft"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:layout_editor_absoluteX="33dp" />
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <Button
             android:id="@+id/RotateRightBttn"
-            android:layout_width="83dp"
+            android:layout_width="80dp"
             android:layout_height="70dp"
-            android:layout_marginTop="112dp"
+            android:layout_marginStart="172dp"
+            android:layout_marginTop="120dp"
             android:background="@drawable/rright"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="176dp" />
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <Button
             android:id="@+id/upBttn"
             android:layout_width="wrap_content"
             android:layout_height="70dp"
-            android:layout_marginTop="44dp"
+            android:layout_marginEnd="120dp"
+            android:layout_marginTop="36dp"
             android:background="@drawable/up"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="399dp" />
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <Button
             android:id="@+id/leftBttn"
             android:layout_width="wrap_content"
             android:layout_height="70dp"
-            android:layout_marginBottom="136dp"
+            android:layout_marginBottom="68dp"
+            android:layout_marginEnd="196dp"
             android:background="@drawable/left"
             app:layout_constraintBottom_toBottomOf="parent"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="311dp" />
+            app:layout_constraintEnd_toEndOf="parent" />
 
         <Button
             android:id="@+id/rightBttn"
             android:layout_width="wrap_content"
             android:layout_height="70dp"
-            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="64dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginTop="8dp"
             android:background="@drawable/right"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteY="109dp" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.923" />
 
         <Button
             android:id="@+id/downBttn"
             android:layout_width="wrap_content"
             android:layout_height="70dp"
-            android:layout_marginBottom="72dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginEnd="116dp"
             android:background="@drawable/down"
+            android:orientation="horizontal"
             app:layout_constraintBottom_toBottomOf="parent"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="399dp" />
+            app:layout_constraintEnd_toEndOf="parent" />
 
     </android.support.constraint.ConstraintLayout>
 
